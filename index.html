@@ -18,53 +18,135 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /> Portfolio Project</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="nucampNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>
-                                Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-cutlery fa-lg"></i> Recipes</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-bag fa-lg"></i>
-                                Store</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-calendar fa-lg"></i>              Events</a></li>
-                    </ul>
-                    <span class="navbar-text ml-auto">
-                        <a role="button" id="cart">
-                            <i class="fa fa-shopping-cart"></i> Cart
-                        </a>
-                        <a role="button" id="loginButton">
-                            <i class="fa fa-user-circle"></i> Login
-                        </a>
-                    </span>
+    <header class="jumbotron jumbotron-fluid bg-dark mb-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <img src="img/smokestack.png" class="img-fluid">
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
+        
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smokestackNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="smokestackNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active mr-3"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="#"><i class="fa fa-cutlery fa-lg"></i> Recipes</a>
+                    </li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="#"><i class="fa fa-shopping-bag fa-lg"></i> Store</a>
+                    </li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="#"><i class="fa fa-calendar fa-lg"></i> Events</a>
+                    </li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" id="cart">
+                        <i class="fa fa-shopping-cart"></i> Cart
+                    </a>
+                </span>
+                <span class="navbar-text ml-3">
+                    <a role="button" id="loginButton">
+                        <i class="fa fa-user-circle"></i> Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    
 
     
-    <main class="container py-3">
+    <main class="container my-5">
 
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-                featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="row justify-content-center">
+            <div class="col-3 border border-dark bg-info">
+                <h3 class="text-center mb-3">Featured Griller</h3>
+                    <img class="border border-dark rounded-circle mt-1" src="img/susie.png" width="100%">
+                <h5 class="text-center mt-3"><u>Susie Bulloch</u></h5>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus. Urna neque viverra justo nec ultrices dui sapien. Eget sit amet tellus cras. Semper viverra nam libero justo laoreet sit amet. Sed odio morbi quis commodo odio aenean. Mattis ullamcorper velit sed ullamcorper. Faucibus nisl tincidunt eget nullam. Quam quisque id diam vel quam. Praesent elementum facilisis leo vel fringilla. Sodales neque sodales ut etiam sit amet.</p>
+            </div>
+            <div class="col-9 bg-dark">
+                <div class="row justify-content-center">
+                    <div class="col-9 p-5">
+                        <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#homeCarousel" data-slide-to="1"></li>
+                                <li data-target="#homeCarousel" data-slide-to="2"></li>
+                                <li data-target="#homeCarousel" data-slide-to="3"></li>
+                                <li data-target="#homeCarousel" data-slide-to="4"></li>
+                                <li data-target="#homeCarousel" data-slide-to="5"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100 img-responive" src="img/grill.png" alt="Breadcrumb Trail Campground">
+                                    <div class="carousel-caption">
+                                        <h3>Breadcrumb Trail Campground</h3>
+                                            <p class="d-none d-sm-block">Let Nucamp be your guide to this off-the-beaten-path, hike-in-only campground.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/apron.png" alt="React Lake Campground">
+                                    <div class="carousel-caption">
+                                        <h3>React Lake Campground</h3>
+                                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                                    </div>                            
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/gloves.png
+                                    " alt="Chrome River Campground">
+                                    <div class="carousel-caption">
+                                        <h3>Chrome River Campground</h3>
+                                        <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.</p>
+                                    </div> 
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/pellets.png" alt="Chrome River Campground">
+                                    <div class="carousel-caption">
+                                        <h3>Chrome River Campground</h3>
+                                        <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.</p>
+                                    </div> 
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/rub.jpg" alt="Chrome River Campground">
+                                    <div class="carousel-caption">
+                                        <h3>Chrome River Campground</h3>
+                                        <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.</p>
+                                    </div> 
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/techniques.jpg" alt="Chrome River Campground">
+                                    <div class="carousel-caption">
+                                        <h3>Chrome River Campground</h3>
+                                        <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.</p>
+                                    </div> 
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <button class="btn btn-danger btn-sm" id="carouselButton">
+                                <i class="fa fa-pause"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
-        <div class="row">
+        <div class="row mt-5">
             <div class="col">
-                <p>This is your project starter. Feel free to change everything to build your project idea.</p>
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo a diam sollicitudin tempor id eu nisl nunc. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor. Libero enim sed faucibus turpis. A erat nam at lectus urna duis convallis convallis.</p>
 
             </div>
         </div>

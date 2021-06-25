@@ -13,41 +13,54 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
 
-    <title>Smokestack BBQ & Grilling</title>
+    <title>Smokestack BBQ Supply Store</title>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /> Portfolio Project</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="nucampNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>
-                                Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> Recipes</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i>
-                                Contact</a></li>
-                    </ul>
-                    <span class="navbar-text ml-auto">
-                        <a role="button" id="loginButton">
-                            <i class="fa fa-sign-in"></i> Login
-                        </a>
-                    </span>
+    <header class="jumbotron jumbotron-fluid bg-dark mb-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <img src="img/smokestack.png" class="img-fluid rounded-circle">
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
+        
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smokestackNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="smokestackNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-3"><a class="nav-link" href="./index.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item active mr-3"><a class="nav-link" href="#"><i class="fa fa-cutlery fa-lg"></i> Recipes</a>
+                    </li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="#"><i class="fa fa-shopping-bag fa-lg"></i> Store</a>
+                    </li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="#"><i class="fa fa-calendar fa-lg"></i> Events</a>
+                    </li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" id="cart">
+                        <i class="fa fa-shopping-cart"></i> Cart
+                    </a>
+                </span>
+                <span class="navbar-text ml-3">
+                    <a role="button" id="loginButton">
+                        <i class="fa fa-user-circle"></i> Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
 
     
     <main class="container py-3">
-        <div class="row">
+        <div class="row my-3">
             <div class="col d-flex align-items-center justify-content-center">
                 <img src="./img/raising-steaks@2x.jpg" class="d-block" width="500px" alt="Man in apron holding ribeye" />
             </div>
@@ -111,13 +124,13 @@
         </div>
 
         <legend>Seafood</legend>
-        <div class="row recipeSection" id="seafoodRecipes">
+        <div class="row recipeSection m-2" id="seafoodRecipes">
             <div class="col-3 recipe">
-                <img src="./img/seafood-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                <img src="./img/SmokedCrabLegs.jpg" class="img-thumbnail w-100" width="100%"/>
+                <p class="font-weight-bold">Smoked Crab Legs<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
             </div>
             <div class="col-3 recipe">
-                <img src="./img/seafood-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                <img src="./img/seafood-placeholder.jpg" class="img-thumbnail w-100" width="100%"/>
                 <p class="font-weight-bold">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
             </div>
             <div class="col-3 recipe">
@@ -131,7 +144,7 @@
         </div>
 
         <legend>Veggies</legend>
-        <div class="row recipeSection" id="veggieRecipes">
+        <div class="row recipeSection m-2" id="veggieRecipes">
             <div class="col-3 recipe">
                 <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
                 <p class="font-weight-bold">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
@@ -151,7 +164,7 @@
         </div>
 
         <legend>Snacks</legend>
-        <div class="row recipeSection" id="snacksRecipes">
+        <div class="row recipeSection m-2" id="snacksRecipes">
             <div class="col-3 recipe">
                 <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
                 <p class="font-weight-bold">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
@@ -172,12 +185,12 @@
 
     </main>
 
-    <footer class="bg-light p-2">
+    <footer class="bg-dark p-2">
         <div class="container">
             <div class="row">
                 <!--Social buttons-->
-                <div class="col text-center">
-                    <h5>Social</h5>
+                <div class="col text-center my-2">
+                    <h5 class="text-light">Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
                             class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
@@ -187,20 +200,21 @@
                     <a class="btn btn-social-icon btn-google" href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
                 </div>
                 <!--Subscribe form-->
-                <div class="col">
+                <div class="col d-none d-sm-block">
                     <div class="form-group row">
-                        <label for="subscribe" class="col col-form-label">Subscribe</label>
-                        <div class="col">
+                        <div class="col mt-4">
                             <input type="email" id="subscribe" name="subscribe" placeholder="email address" />
+                            <button class="btn btn-secondary mt-1">Subscribe</button>
                         </div>
                     </div>
                 </div>
                 <!--App download-->
-                <div class="col">
-                    <img src="./img/app-store-google-play.png" alt="Apple store and Google Play icons">
+                <div class="col-12 col-sm-3 my-2 text-center">
+                    <a href="https://www.apple.com/app-store/"><img src="./img/app-store.png" alt="Apple store"></a>
+                    <a href="https://play.google.com"><img src="./img/google-play.png" alt="Google Play"></a>
                 </div>
                 <!--Contact info-->
-                <div class="col-sm-4 text-center">
+                <div class="col-sm-3 text-center d-none d-sm-block">
                     <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
                         1-206-555-1234</a><br />
                     <a role="button" class="btn btn-link" href="mailto:change-me@nucamp.co"><i

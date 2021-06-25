@@ -1,4 +1,59 @@
 main {
-  min-height: 80vh; }
+  min-height: 80vh; 
+}
 
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
 
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators li {
+    background-color: #FFA500;
+}
+
+.carousel {
+  border: solid #FFA500;
+}
+
+.newsletter {
+  background-color: #FFA500;
+  color: #fff;
+}
+
+.newsletter-title {
+  color: #000;
+}
+
+.carousel-title {
+  color: #fff;
+}
+
+#techniques {
+  border: solid #fff;
+}
+
+.tips {
+  color: #fff;
+}
+
+.tip-content {
+  color: #FFA500;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption-title {
+  color: #FFA500;
+}

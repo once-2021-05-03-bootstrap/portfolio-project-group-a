@@ -57,3 +57,13 @@ main {
 .carousel-caption-title {
   color: #FFA500;
 }
+
+legend {
+  background-color: #FFA500;
+  width: 20%;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: 5px solid #FFA500;
+}

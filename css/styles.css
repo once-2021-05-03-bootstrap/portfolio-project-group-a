@@ -62,6 +62,8 @@ legend {
   background-color: #FFA500;
   width: 20%;
   border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
 }
 
 fieldset {

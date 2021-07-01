@@ -1,0 +1,90 @@
+//BBQ Pitstop nav bar dropdown menu code
+
+<li class="site-nav__item site-nav__item--no-columns" aria-haspopup="true">
+    <a href="/pages/recipes" class="site-nav__link site-nav__link-toggle" id="SiteNavLabel-recipes" aria-controls="SiteNavLinklist-recipes" aria-expanded="false">
+        Recipes
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-down" viewBox="0 0 32 32"><path fill="#444" d="M26.984 8.5l1.516 1.617L16 23.5 3.5 10.117 5.008 8.5 16 20.258z"></path></svg>
+    </a>
+
+    <div class="site-nav__dropdown meganav site-nav__dropdown--second-level" id="SiteNavLinklist-recipes" aria-labelledby="SiteNavLabel-recipes" role="navigation">
+        <ul class="meganav__nav page-width">
+            <div class="grid grid--no-gutters meganav__scroller--has-list">
+                <div class="grid__item meganav__list one-fifth">
+                    <li class="site-nav__dropdown-container">
+                        <a href="/pages/beef" class="meganav__link meganav__link--second-level">
+                            Beef
+                        </a>
+                    </li>
+
+                    <li class="site-nav__dropdown-container">  
+                        <a href="/pages/bird" class="meganav__link meganav__link--second-level">
+                            Bird
+                        </a>
+                    </li>
+
+                    <li class="site-nav__dropdown-container">
+                        <a href="/pages/fish" class="meganav__link  meganav__link--second-level">
+                            Fish
+                        </a>
+                    </li>
+
+                    <li class="site-nav__dropdown-container">
+                        <a href="/pages/pork" class="meganav__link meganav__link--second-level">
+                            Pork
+                        </a>
+                    </li>
+
+                    <li class="site-nav__dropdown-container"> 
+                        <a href="/pages/other" class="meganav__link meganav__link--second-level">
+                            Other
+                        </a>
+                    </li>
+
+                    <li class="site-nav__dropdown-container">
+                        <a href="/pages/videos" class="meganav__link meganav__link--second-level">
+                            Videos
+                        </a>
+                    </li>
+
+                    <li class="site-nav__dropdown-container">
+                        <a href="/pages/rub-of-the-week-recipes" class="meganav__link meganav__link--second-level">
+                            Rub of the Week Recipes
+                        </a>
+                    </li>  
+                </div>
+            </div>
+        </ul>
+    </div>
+</li>
+
+//Bootstrap doc code for dropdown menu
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

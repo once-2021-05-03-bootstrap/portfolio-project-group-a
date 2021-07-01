@@ -57,3 +57,15 @@ main {
 .carousel-caption-title {
   color: #FFA500;
 }
+
+#aboutUs {
+  border: double 10px #FFA500;
+  border-radius: 25px;
+  background-color: #343a40;
+  color: white;
+  padding: 10px;
+}
+
+#loginModal .modal-header {
+  background-color: #343a40;
+  color: #FFA500; }

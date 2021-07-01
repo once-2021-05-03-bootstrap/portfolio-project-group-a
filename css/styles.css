@@ -68,4 +68,17 @@ main {
 
 #loginModal .modal-header {
   background-color: #343a40;
-  color: #FFA500; }
+  color: #FFA500; 
+}
+
+  legend {
+  background-color: #FFA500;
+  width: 20%;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+fieldset {
+  border: 5px solid #FFA500;
+}

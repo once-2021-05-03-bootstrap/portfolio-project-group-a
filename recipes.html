@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Smokestack BBQ Supply Store</title>
 </head>
@@ -62,145 +63,236 @@
     <main class="container py-3">
         <div class="row my-3">
             <div class="col d-flex align-items-center justify-content-center">
-                <img src="./img/raising-steaks@2x.jpg" class="d-block" width="500px" alt="Man in apron holding ribeye" />
+                <img src="./img/raising-steaks@2x.jpg" class="d-block image-responsive" width="400px" alt="Man in apron holding ribeye" />
             </div>
         </div>
-        <legend>Beef</legend>
-        <div class="row recipeSection m-2" id="beefRecipes">
-            <div class="col-3 recipe">
-                <img src="./img/steak_skewers.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">Chimichuri Steak Skewers<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
+        <fieldset class="p-0 my-3 bg-dark">
+            <legend class="text-center">Beef</legend>
+            <div class="row recipeSection m-0 pt-3 bg-dark" id="beefRecipes">
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/steak_skewers.jpg" class="img-thumbnail" width="100%" data-toggle="modal" data-target="#recipe2"/>
+                    <p class="font-weight-bold text-light">Chimichuri Steak Skewers<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/beef-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Beef<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/beef-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Beef<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/beef-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Beef<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
             </div>
-            <div class="col-3 recipe">
-                <img src="./img/beef-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Beef<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+        </fieldset>
+
+        <fieldset class="p-0 my-3 bg-dark">
+            <legend class="text-center">Pork</legend>
+            <div class="row recipeSection m-2" id="porkRecipes">
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
+                </div>
             </div>
-            <div class="col-3 recipe">
-                <img src="./img/beef-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Beef<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
+        </fieldset>
+
+        <fieldset class="p-0 my-3 bg-dark">
+            <legend class="text-center">Poultry</legend>
+            <div class="row recipeSection m-2" id="poultryRecipes">
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
             </div>
-            <div class="col-3 recipe">
-                <img src="./img/beef-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Beef<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+        </fieldset>
+
+        <fieldset class="p-0 my-3 bg-dark">
+            <legend class="text-center">Seafood</legend>
+            <div class="row recipeSection m-2" id="seafoodRecipes">
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/SmokedCrabLegs.jpg" class="img-thumbnail w-100" width="100%" data-toggle="modal" data-target="#recipe1"/>
+                    <p class="font-weight-bold text-light">Smoked Crab Legs<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/seafood-placeholder.jpg" class="img-thumbnail w-100" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/seafood-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/seafood-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
+                </div>
             </div>
-        </div>
-        <legend>Pork</legend>
-        <div class="row recipeSection m-2" id="porkRecipes">
-            <div class="col-3 recipe">
-                <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+        </fieldset>
+
+        <fieldset class="p-0 my-3 bg-dark">
+            <legend class="text-center">Veggies</legend>
+            <div class="row recipeSection m-2" id="veggieRecipes">
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
             </div>
-            <div class="col-3 recipe">
-                <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+        </fieldset>
+
+        <fieldset class="p-0 my-3 bg-dark">
+            <legend class="text-center">Snacks</legend>
+            <div class="row recipeSection m-2" id="snacksRecipes">
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
+                </div>
+                <div class="col-6 col-sm-3 recipe">
+                    <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
+                    <p class="font-weight-bold text-light">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
+                </div>
             </div>
-            <div class="col-3 recipe">
-                <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
+        </fieldset>
+
+        <!--recipe modals-->
+        <div class="modal fade" id="recipe1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="./img/SmokedCrabLegs.jpg" width="50%"/>
+                        <h5 class="modal-title ml-2" id="recipe1Label">Smoked Crab Legs</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <div class="modal-body">
+                    <h3 class="text-warning">Ingredients</h3>
+                    <ul>
+                        <li>10lbs Snow Crab Legs</li>
+                        <li>1lb Real Butter</li>
+                        <li>2 Tbsp Killer Hogs The BBQ Rub</li>
+                        <li>1 Tbsp Dried Parsley</li>
+                        <li>1 Tsp Crab/Shrimp Boil Seasoning</li>
+                        <li>Juice From 1 Lemon</li>
+                    </ul>
+                    <h3 class="text-warning">Instructions</h3>
+                    <ol>
+                        <li>Prepare Charcoal Smoker for indirect cooking at 250⁰. Add 1 chunk of seasoned cherry wood for smoke.</li>
+                        <li>Melt butter in a small saucepan over low heat.</li>
+                        <li>Add BBQ Rub, Crab/Shrimp boil seasoning, parsley, and lemon juice; stir to combine.</li>
+                        <li>Place the Butter mixture in a half size aluminum steam pan and dredge each crab leg cluster in the butter. Reserve the remaining butter mixture for basting.</li>
+                        <li>Arrange crab clusters on cooking grate and smoke for ½ hour. Basting every ten minutes with reserved butter mixture.</li>
+                        <li>Remove the crab legs from the smoker after 30 minutes of smoking. Legs should be steaming hot at this point.</li>
+                        <li>Serve immediately with drawn butter, cocktail sauce, and extra lemon wedges.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="col-3 recipe">
-                <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
-            </div>
-        </div>
-        <legend>Poultry</legend>
-        <div class="row recipeSection m-2" id="poultryRecipes">
-            <div class="col-3 recipe">
-                <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
             </div>
         </div>
 
-        <legend>Seafood</legend>
-        <div class="row recipeSection m-2" id="seafoodRecipes">
-            <div class="col-3 recipe">
-                <img src="./img/SmokedCrabLegs.jpg" class="img-thumbnail w-100" width="100%"/>
-                <p class="font-weight-bold">Smoked Crab Legs<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
+        <div class="modal fade" id="recipe2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="./img/steak_skewers.jpg" width="50%"/>
+                        <h5 class="modal-title ml-2" id="recipe2Label">Chimichuri Steak Skwers</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <div class="modal-body">
+                    <h3 class="text-warning">Ingredients</h3>
+                    <ul>
+                        <li>Small Handful Fresh Parsley, finely chopped</li>
+                        <li>Small Handful Fresh Coriander, finely chopped</li>
+                        <li>Small Handful Fresh Oregano, finely chopped</li>
+                        <li>1 Small Clove Garlic, finely chopped</li>
+                        <li>1/2 Tsp Dried Chilli Flakes</li>
+                        <li>1 Tsp Red Wine Vinegar</li>
+                        <li>3-4 Tbsp EVOO, plus extra for steak</li>
+                        <li>2 Fat Sirloin Steaks, trimmed and cut into cubes</li>
+                        <li>1 Red, 1 Orange & 1 Yellow Pepper, deseeded and cut into chunks</li>
+                    </ul>
+                    <h3 class="text-warning">Instructions</h3>
+                    <ol>
+                        <li>Soak your barbecue skewers if you’re using wooden ones (see below) and get the barbecue going.</li>
+                        <li>To make the chimichurri sauce, combine the chopped parsley, coriander, oregano, garlic, the dried chilli flakes, red wine vinegar, extra virgin olive oil and a good pinch of salt, and set aside to let the flavours meld.</li>
+                        <li>To assemble the skewers, toss the steak pieces in a little more olive oil, salt and some freshly ground black pepper, before skewering them with the pepper pieces, two pieces of pepper being sure to mix up the colours between each piece of steak.</li>
+                        <li>Grill over a direct heat until the meat and veggies have charred, but the steak pieces are still pink in the middle – if you have any steak pieces left that did not fit onto the skewers, make a dummy skewer to test if the meat is done or not!</li>
+                        <li>Serve with the chimichurri on the side!</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="col-3 recipe">
-                <img src="./img/seafood-placeholder.jpg" class="img-thumbnail w-100" width="100%"/>
-                <p class="font-weight-bold">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/seafood-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/seafood-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
-            </div>
-        </div>
-
-        <legend>Veggies</legend>
-        <div class="row recipeSection m-2" id="veggieRecipes">
-            <div class="col-3 recipe">
-                <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
-            </div>
-        </div>
-
-        <legend>Snacks</legend>
-        <div class="row recipeSection m-2" id="snacksRecipes">
-            <div class="col-3 recipe">
-                <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
-            </div>
-            <div class="col-3 recipe">
-                <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
-                <p class="font-weight-bold">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
             </div>
         </div>
-
     </main>
 
-    <footer class="bg-dark p-2">
+    <footer class="bg-dark p-0">
         <div class="container">
             <div class="row">
                 <!--Social buttons-->
-                <div class="col text-center my-2">
+                <div class="col-sm-3 text-center my-2">
                     <h5 class="text-light">Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                    <a class="btn btn-social-icon btn-instagram mb-1" href="http://instagram.com/"><i
                             class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
-                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-facebook mb-1" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a><br>
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
                             class="fa fa-twitter"></i></a>
                     <a class="btn btn-social-icon btn-google" href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
                 </div>
                 <!--Subscribe form-->
-                <div class="col d-none d-sm-block">
+                <div class="col-sm-3 d-none d-sm-block">
                     <div class="form-group row">
                         <div class="col mt-4">
                             <input type="email" id="subscribe" name="subscribe" placeholder="email address" />
@@ -209,12 +301,12 @@
                     </div>
                 </div>
                 <!--App download-->
-                <div class="col-12 col-sm-3 my-2 text-center">
-                    <a href="https://www.apple.com/app-store/"><img src="./img/app-store.png" alt="Apple store"></a>
-                    <a href="https://play.google.com"><img src="./img/google-play.png" alt="Google Play"></a>
+                <div class="col-12 col-sm-3 my-1 text-center">
+                    <a href="https://www.apple.com/app-store/"><img class="my-1" src="./img/app-store.png" alt="Apple store"></a>
+                    <a href="https://play.google.com"><img class="my-1" src="./img/google-play.png" alt="Google Play"></a>
                 </div>
                 <!--Contact info-->
-                <div class="col-sm-3 text-center d-none d-sm-block">
+                <div class="col-sm-3 text-center d-none d-sm-inline-block">
                     <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
                         1-206-555-1234</a><br />
                     <a role="button" class="btn btn-link" href="mailto:change-me@nucamp.co"><i

@@ -82,3 +82,7 @@ main {
 fieldset {
   border: 5px solid #FFA500;
 }
+
+#closeButton {
+  color: white;
+}

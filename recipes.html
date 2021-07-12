@@ -28,7 +28,7 @@
             </div>
         </div>
     </header>
-        
+
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smokestackNavbar">
@@ -36,9 +36,24 @@
             </button>
             <div class="collapse navbar-collapse" id="smokestackNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item mr-3"><a class="nav-link" href="./index.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    <li class="nav-item active mr-3"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
                     </li>
-                    <li class="nav-item active mr-3"><a class="nav-link" href="#"><i class="fa fa-cutlery fa-lg"></i> Recipes</a>
+                    <li class="nav-item dropdown btn-group mr-3">
+                        <a role="button" class="nav-link" href="recipes.html"><i class="fa fa-cutlery fa-lg"></i> Recipes</a>
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="recipeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu" aria-labelledby="recipeDropdown">
+                            <a class="dropdown-item" href="recipes.html#beef">Beef</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="recipes.html#pork">Pork</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="recipes.html#poultry">Poultry</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="recipes.html#seafood">Seafood</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="recipes.html#veggies">Veggies</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="recipes.html#snacks">Snacks</a>
+                        </div>    
                     </li>
                     <li class="nav-item mr-3"><a class="nav-link" href="#"><i class="fa fa-shopping-bag fa-lg"></i> Store</a>
                     </li>
@@ -105,6 +120,9 @@
         <fieldset id="beef" class="p-0 my-3 bg-dark">
             <legend class="text-center">Beef</legend>
             <div class="row recipeSection m-0 pt-3 bg-dark" id="beefRecipes">
+                <div class="col-12 text-right">
+                    <button class="btn btn-dark btn-lg mb-1 d-inline d-sm-none recipeExpand" data-toggle="collapse" data-target=".beef-recipe-expand" type="button"><span class="fa fa-arrow-circle-down fa-3"></span></button>
+                </div>
                 <div class="col-6 col-sm-3 recipe">
                     <img src="./img/steak_skewers.jpg" class="img-thumbnail" width="100%" data-toggle="modal" data-target="#recipe2"/>
                     <p class="font-weight-bold text-light">Chimichuri Steak Skewers<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
@@ -113,11 +131,11 @@
                     <img src="./img/beef-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Beef<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm beef-recipe-expand">
                     <img src="./img/beef-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Beef<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm beef-recipe-expand">
                     <img src="./img/beef-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Beef<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
                 </div>
@@ -126,7 +144,7 @@
 
         <fieldset id="pork" class="p-0 my-3 bg-dark">
             <legend class="text-center">Pork</legend>
-            <div class="row recipeSection m-2" id="porkRecipes">
+            <div class="row recipeSection m-2" id="porkRecipes"> 
                 <div class="col-6 col-sm-3 recipe">
                     <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
@@ -135,11 +153,11 @@
                     <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm">
                     <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm">
                     <img src="./img/pork-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Pork<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
                 </div>
@@ -157,11 +175,11 @@
                     <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm">
                     <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm">
                     <img src="./img/poultry-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Chicken<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
                 </div>
@@ -179,11 +197,11 @@
                     <img src="./img/seafood-placeholder.jpg" class="img-thumbnail w-100" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm">
                     <img src="./img/seafood-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm">
                     <img src="./img/seafood-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Salmon<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
                 </div>
@@ -201,11 +219,11 @@
                     <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm">
                     <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm">
                     <img src="./img/veggies-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">Grilled Asparagus<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
                 </div>
@@ -223,11 +241,11 @@
                     <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-o text-warning"></span><span class="fa fa-star-o text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm">
                     <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></p>
                 </div>
-                <div class="col-6 col-sm-3 recipe">
+                <div class="col-6 col-sm-3 recipe collapse dont-collapse-sm">
                     <img src="./img/snacks-placeholder.jpg" class="img-thumbnail" width="100%"/>
                     <p class="font-weight-bold text-light">BBQ Snacks<br><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-o text-warning"></span></p>
                 </div>
